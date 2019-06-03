@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/shape_toolbar"
+            android:navigationIcon="@drawable/back"
+            app:navigationIcon="@drawable/back">
+
+            <TextView
+                android:id="@+id/toolBar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="标题栏"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="孕周:"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/ed_week"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="周"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/ed_day"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="天"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/blackAsh" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="第"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/ed_Tai"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="胎"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/ed_Chan"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="产"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/blackAsh" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="胎方位:"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/Fetal_azimuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/blackAsh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="生育史"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="足月产:"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/full_term"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="早产:"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/preterm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="流产:"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/abortion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="现存:"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/exist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/blackAsh" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="分娩方式:"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="请选择"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/blackAsh" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="分娩日期:"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/birthDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="请选择"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/blackAsh" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="妊娠期合并证:"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/complication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="请选择"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/complication_plus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/complication"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape_info"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/ed_complication"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="请填写内容" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/blackAsh" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="身高:"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="cm"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/blackAsh" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="体重:"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="kg"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/blackAsh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="产后24小时泌乳量:"
+                android:textSize="17sp" />
+
+            <RadioGroup
+                android:id="@+id/tfmilk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <RadioButton
+                    android:id="@+id/tfmilk_zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:button="@drawable/checked_size"
+                    android:text="① 乳汁分泌满足婴儿需要;"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/tfmilk_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:button="@drawable/checked_size"
+                    android:text="② 乳汁	分泌明显增多能满足婴儿2/3的需要,余用代乳品;"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/tfmilk_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:button="@drawable/checked_size"
+                    android:text="③ 乳汁分泌增多,能满足婴儿1/3的需要,余用代乳品;"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/tfmilk_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:button="@drawable/checked_size"
+                    android:text="④ 缺乳无改善,婴儿1/3以下甚至全部需要用代乳品。"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="20dp"
+                android:background="@color/blackAsh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="产后48小时泌乳量:"
+                android:textSize="17sp" />
+
+            <RadioGroup
+                android:id="@+id/femilk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <RadioButton
+                    android:id="@+id/femilk_zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:button="@drawable/checked_size"
+                    android:text="① 乳汁分泌满足婴儿需要;"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/femilk_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:button="@drawable/checked_size"
+                    android:text="② 乳汁	分泌明显增多能满足婴儿2/3的需要,余用代乳品;" />
+
+                <RadioButton
+                    android:id="@+id/femilk_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:button="@drawable/checked_size"
+                    android:text="③ 乳汁分泌增多,能满足婴儿1/3的需要,余用代乳品;"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/femilk_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:button="@drawable/checked_size"
+                    android:text="④ 缺乳无改善,婴儿1/3以下甚至全部需要用代乳品。"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="20dp"
+                android:background="@color/blackAsh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="初始泌乳时间:"
+                android:textSize="17sp" />
+
+            <RadioGroup
+                android:id="@+id/firstmilk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <RadioButton
+                    android:id="@+id/firstmilk_zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:button="@drawable/checked_size"
+                    android:text="①小于24小时"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/firstmilk_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:button="@drawable/checked_size"
+                    android:text="②24～48小时"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/firstmilk_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:button="@drawable/checked_size"
+                    android:text="③大于48小时"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="20dp"
+                android:background="@color/blackAsh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="产后情绪:"
+                android:textSize="17sp" />
+
+            <RadioGroup
+                android:id="@+id/mood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="@dimen/dp_10">
+
+                <RadioButton
+                    android:id="@+id/mood_zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:button="@drawable/checked_size"
+                    android:text="① 情绪良好:产前、后情绪无明显变化"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/mood_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:button="@drawable/checked_size"
+                    android:text="② 情绪低落:产后情绪不振、闷闷不乐"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/mood_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:button="@drawable/checked_size"
+                    android:text="③ 情绪焦虑:产后烦躁易怒，情绪不稳定"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

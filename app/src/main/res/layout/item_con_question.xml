@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/question_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="产后24小时泌乳量:"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/home_yellow" />
+
+    <RadioGroup
+        android:id="@+id/option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/option_A"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:button="@drawable/checked_size"
+            android:checked="false"
+            android:clickable="false"
+            android:text="① 乳汁分泌满足婴儿需要;"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/option_B"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:button="@drawable/checked_size"
+            android:checked="false"
+            android:text="② 乳汁	分泌明显增多能满足婴儿2/3的需要,余用代乳品;"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/option_C"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:button="@drawable/checked_size"
+            android:checked="false"
+            android:text="③ 乳汁分泌增多,能满足婴儿1/3的需要,余用代乳品;"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/option_D"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:button="@drawable/checked_size"
+            android:checked="false"
+            android:text="④ 缺乳无改善,婴儿1/3以下甚至全部需要用代乳品。"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/option_E"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:button="@drawable/checked_size"
+            android:checked="false"
+            android:text="④ 缺乳无改善,婴儿1/3以下甚至全部需要用代乳品。"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blackAsh" />
+
+</LinearLayout>

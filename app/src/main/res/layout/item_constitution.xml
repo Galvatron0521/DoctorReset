@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rlTimeline"
+        android:layout_width="32dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTopLine"
+            android:layout_width="1dp"
+            android:layout_height="18dp"
+            android:layout_centerHorizontal="true"
+            android:background="#999" />
+
+        <TextView
+            android:id="@+id/tvDot"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_below="@id/tvTopLine"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/timelline_dot_normal" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tvDot"
+            android:layout_centerHorizontal="true"
+            android:background="#999" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/table_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="5dp"
+        app:contentPadding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_clock"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@+id/table_time"
+                android:layout_alignTop="@+id/table_time"
+                android:src="@drawable/clock" />
+
+            <TextView
+                android:id="@+id/table_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/icon_clock"
+                android:gravity="center"
+                android:text="时间" />
+
+            <TextView
+                android:id="@+id/table_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/table_time"
+                android:gravity="center"
+                android:text="量表标题" />
+
+            <LinearLayout
+                android:id="@+id/layout_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/table_title"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结果评估:" />
+
+                <TextView
+                    android:id="@+id/table_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="量表结果" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_groupScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_result"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/table_groupScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="得分" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
